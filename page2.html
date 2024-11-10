@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de un compilador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="page1.html">Definición de Compiladores</a>
+        <a href="page2.html" class="active">Estructura de un compilador</a>
+        <a href="page3.html">Generación de código intermedio y final</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html">Referencias</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content" id="content">
+        <div class="eheader">
+            <h1>Estructura de un compilador</h1>
+        </div>
+        <div class="econtainer">
+            <div class="ecard">
+                <div class="ecard-title">1. Análisis léxico</div>
+                <div class="ecard-description">
+                    Convierte el código fuente en una secuencia de tokens, que son las unidades básicas del lenguaje.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">2. Análisis sintáctico</div>
+                <div class="ecard-description">
+                    Organiza los tokens en una estructura de árbol, conocida como árbol sintáctico, para entender la estructura del código.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">3. Análisis semántico</div>
+                <div class="ecard-description">
+                    Verifica la coherencia de los datos y las operaciones en el código, asegurándose de que sigan las reglas semánticas del lenguaje.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">4. Generación de código intermedio</div>
+                <div class="ecard-description">
+                    Crea una representación intermedia del código, que facilita su optimización y la traducción a código de máquina.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">5. Optimización de código</div>
+                <div class="ecard-description">
+                    Mejora la eficiencia del código intermedio para que el código final sea más rápido y consuma menos recursos.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">6. Generación de código</div>
+                <div class="ecard-description">
+                    Traduce el código intermedio optimizado a código máquina específico para el sistema de destino.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">7. Ensamblaje y enlazado</div>
+                <div class="ecard-description">
+                    Convierte el código máquina en un formato ejecutable y lo enlaza con las bibliotecas necesarias para su ejecución.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

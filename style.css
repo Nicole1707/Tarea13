@@ -228,3 +228,43 @@ body {
     font-size: 1em;
     color: #4a4a4a;
 }
+/* Hacer que .content ocupe todo el espacio vertical disponible */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa la altura de la ventana */
+    box-sizing: border-box;
+}
+
+/* Asegurarse de que .econtainer ocupe el espacio adicional */
+.econtainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    max-width: 1200px;
+    flex-grow: 1; /* Expande para ocupar el espacio restante */
+}
+
+/* Mantener el estilo de las tarjetas */
+.ecard {
+    background-color: #ffffff;
+    border-left: 5px solid #5f99f7;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ecard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

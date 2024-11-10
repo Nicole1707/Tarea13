@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación de código intermedio y final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="page1.html">Definición de Compiladores</a>
+        <a href="page2.html">Estructura de un compilador</a>
+        <a href="page3.html" class="active">Generación de código intermedio y final</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html">Referencias</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content" id="content">
+        <div class="eheader">
+            <h1>Generación de código intermedio y final</h1>
+        </div>
+        <div class="econtainer">
+            <div class="ecard">
+                <div class="ecard-title">Generación de código intermedio</div>
+                <div class="ecard-description">
+                    Esta fase crea una representación intermedia del programa que permite una fácil optimización y portabilidad. Se asegura de que sea independiente del hardware y eficiente, y facilita la transición a código de máquina específico en etapas posteriores.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Optimización de código intermedio</div>
+                <div class="ecard-description">
+                    Optimiza el código intermedio para eliminar redundancias y mejorar su eficiencia. Esto puede incluir la optimización de bucles, eliminación de variables innecesarias y optimización de acceso a memoria.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Generación de código final</div>
+                <div class="ecard-description">
+                    Esta etapa traduce el código intermedio optimizado en instrucciones de máquina específicas del sistema de destino, creando el archivo ejecutable final.
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Optimización de código final</div>
+                <div class="ecard-description">
+                    Consiste en afinar aún más el código para maximizar el rendimiento en el hardware de destino. Incluye optimizaciones específicas como la gestión de registros y la mejora de instrucciones específicas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
