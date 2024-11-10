@@ -4,3 +4,4 @@ function toggleSidebar() {
     sidebar.classList.toggle('sidebar-hidden');
     content.classList.toggle('content-expanded');
 }
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición de Compiladores y su Vinculación con la Teoría de Autómatas y Lenguajes Formales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="page1.html" class="active">Definición de Compiladores</a>
+        <a href="page2.html">Estructura de un compilador</a>
+        <a href="page3.html">Generación de código intermedio y final</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html">Referencias</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content" id="content">
+        <div class="eheader">
+            <h1>Los Compiladores y su Vinculación con la Teoría de Autómatas y Lenguajes Formales</h1>
+        </div>
+        <div class="econtainer">
+
+            <div class="ecard">
+                <div class="ecard-title">¿Qué es un Compilador?</div>
+                <div class="ecard-description">
+                    <p>Un compilador es un software que convierte el código fuente, escrito en un lenguaje de alto nivel (como C, Java, o Python), 
+                        a un lenguaje de bajo nivel o lenguaje máquina, que es comprensible y ejecutable por una computadora. 
+                        Este proceso de traducción implica varias fases, desde el análisis léxico hasta la generación de código ejecutable. 
+                        La función principal de un compilador es asegurar que el programa fuente siga las reglas del lenguaje y sea correcto en términos de sintaxis y semántica.
+                    </p>
+                    <img src="assets/fasescompilacion.png"  alt="Diagrama de las fases de un compilador" class="responsive-img">
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Análisis Léxico y Autómatas Finitos</div>
+                <div class="ecard-description">
+                    <p>El análisis léxico es la primera fase, en la que el compilador divide el código en componentes
+                        llamados <i>tokens</i>. Los autómatas finitos deterministas se utilizan para reconocer estos tokens de manera eficiente.</p>
+                        <iframe class="responsive-video" src="https://www.youtube.com/embed/i2_VpVBLBvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            Los autómatas finitos deterministas son especialmente útiles para reconocer tokens, ya que pueden procesar el texto de entrada y tomar decisiones basadas en el estado actual y el próximo carácter. Por ejemplo, si un DFA identifica una secuencia como “int,” la clasifica como una palabra clave en lugar de un identificador.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Análisis Sintáctico y Gramáticas Libres de Contexto</div>
+                <div class="ecard-description">
+                    <p>El análisis sintáctico organiza los tokens en un árbol sintáctico, que representa la estructura del programa. Esto se basa en gramáticas libres de contexto, que definen las reglas de sintaxis de un lenguaje de programación.</p>
+                    <img src="assets/arbolsintactico.jpg"alt="Ejemplo de un árbol sintáctico" class="responsive-img">
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Análisis Semántico y Verificación de Tipos</div>
+                <div class="ecard-description">
+                    <p>En el análisis semántico, el compilador valida la coherencia del código, comprobando la
+                        correcta asignación de tipos y el flujo de control. Esta fase garantiza que el programa sea
+                        válido en términos de lógica y semántica.</p>
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Optimización de Código</div>
+                <div class="ecard-description">
+                    <p>La optimización mejora la eficiencia del código intermedio sin alterar su funcionalidad. Esto
+                        hace que el código final sea más rápido y utilice menos recursos.</p>
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Generación de Código de Máquina</div>
+                <div class="ecard-description">
+                    <p>La fase final del compilador traduce el código intermedio optimizado al lenguaje máquina
+                        específico de la arquitectura del sistema de destino.</p>
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/B0v54vo8-VI?si=EVIr6kQvaDFXJLNY&amp;start=184" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+            <div class="ecard">
+                <div class="ecard-title">Importancia de la Teoría de Autómatas y Lenguajes Formales</div>
+                <div class="ecard-description">
+                    <p>La Teoría de Autómatas y Lenguajes Formales proporciona las bases matemáticas para construir
+                        compiladores robustos y predecibles. Estos conceptos permiten a los compiladores analizar y
+                        procesar el código de manera eficiente, y su comprensión es esencial para quienes se dedican al desarrollo de lenguajes y herramientas de análisis de código.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

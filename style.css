@@ -8,6 +8,11 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    background-color: #f3f6f9;
 }
 
 /* Botón para mostrar/ocultar la barra lateral */
@@ -20,10 +25,21 @@ body {
     border: none;
     cursor: pointer;
     z-index: 2;
-}
+    color: #FFF;
+    padding: 10px;
+    background-color:#2C2F33;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+} 
 
+
+
+.toggle-btn:hover {
+    transform: scale(1.1); /* Ligeramente más grande al hacer hover */
+}
 /* Barra lateral */
-.sidebar {
+/* .sidebar {
     width: 250px;
     height: 100vh;
     background-color: #333;
@@ -36,42 +52,102 @@ body {
     left: 0;
     top: 0;
     transition: transform 0.3s ease;
-}
-
+} */
+/* 
 .sidebar h2 {
     text-align: center;
     margin: 0 0 20px 0;
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
 
 /* Icono en el título */
-.sidebar h2 i {
+/* .sidebar h2 i {
     font-size: 24px;
     color: #f4f4f4;
-}
+} */
 
-.sidebar a {
+/* .sidebar a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     width: 100%;
     text-align: center;
     transition: background-color 0.3s ease;
-}
+} */
 
 /* Color gris oscuro para la página activa */
-.sidebar a.active {
+/* .sidebar a.active {
     background-color: #555;
     color: #ddd;
-}
+} */
 
 /* Efecto de hover en los enlaces */
-.sidebar a:hover {
+/* .sidebar a:hover {
     background-color: #666;
+} */
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2C2F33;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-right: 1px solid #555; /* Borde decorativo */
+    transition: transform 0.3s ease;
 }
 
+/* Encabezado de la barra lateral */
+.sidebar h2 {
+    font-size: 22px;
+    color: #F2E9E4;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* Icono en el título */
+.sidebar h2 i {
+    font-size: 24px;
+    color: #C9ADA7; /* Color sutil para el icono */
+}
+
+/* Estilo de los enlaces */
+.sidebar a {
+    color: #EDEDED;
+    padding: 12px 20px;
+    text-decoration: none;
+    width: 90%;
+    text-align: center;
+    margin: 8px 0;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+}
+
+/* Página activa */
+.sidebar a.active {
+    background-color: #4A4E69;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Hover en los enlaces */
+.sidebar a:hover {
+    background-color: #6B728E;
+    transform: translateX(5px); /* Ligeramente hacia la derecha en hover */
+    color: #FFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave al hacer hover */
+}
 /* Contenido principal */
 .content {
     margin-left: 250px;
@@ -79,6 +155,10 @@ body {
     flex-grow: 1;
     transition: margin-left 0.3s ease, width 0.3s ease;
     width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa la altura de la ventana */
+    box-sizing: border-box;
 }
 
 .header {
@@ -87,6 +167,10 @@ body {
     padding: 15px;
     text-align: center;
     font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, color 0.3s ease; /
 }
 
 /* Estado oculto de la barra lateral */
@@ -102,21 +186,29 @@ body {
 .references-list {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
 }
-
 .references-list li {
-    margin-bottom: 10px;
+    margin: 15px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-.references-list a {
-    color: #333;
+.references-list li:hover {
+    transform: scale(1.02);
+}
+
+.references-list li a {
     text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
 
-.references-list a:hover {
-    text-decoration: underline;
-    color: #555;
+.references-list li a:hover {
+    color: #0056b3;
 }
 /* Logo de UNIBE */
 .unibe-logo {
@@ -169,7 +261,7 @@ body {
 }
 
 /* Fondo general */
-.ebody {
+/* .ebody {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -178,7 +270,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f3f6f9;
-}
+} */
 
 /* Encabezado */
 .eheader {
@@ -229,7 +321,7 @@ body {
     color: #4a4a4a;
 }
 /* Hacer que .content ocupe todo el espacio vertical disponible */
-.content {
+/* .content {
     margin-left: 250px;
     padding: 20px;
     flex-grow: 1;
@@ -238,8 +330,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ocupa la altura de la ventana */
-    box-sizing: border-box;
-}
+    /* box-sizing: border-box; 
+}*/
+
 
 /* Asegurarse de que .econtainer ocupe el espacio adicional */
 .econtainer {
@@ -267,4 +360,38 @@ body {
 .ecard:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.responsive-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .toggle-btn {
+        left: 15px;
+        top: 15px;
+    }
 }
