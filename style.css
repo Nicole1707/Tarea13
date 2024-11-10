@@ -159,6 +159,15 @@ body {
 
 /* Erick */
 
+.elogo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Fondo general */
 .ebody {
     font-family: Arial, sans-serif;

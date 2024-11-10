@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fases del proceso de compilación</title>
+    <title>Principales Compiladores utilizdos en la actualidad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,8 +19,8 @@
         <a href="page1.html">Definición de Compiladores</a>
         <a href="page2.html">Estructura de un compilador</a>
         <a href="page3.html">Generación de código intermedio y final</a>
-        <a href="page4.html" class="active">Fases del proceso de compilación</a>
-        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html" class="active">Compiladores empleados en la actualidad</a>
         <a href="references.html">Referencias</a>
     </div>
 
@@ -31,57 +31,141 @@
         </div>
         <div class="econtainer">
             <div class="ecard">
+                <img src="GNU.png" alt="GCC" class="elogo">
                 <div class="ecard-title">1. GCC (GNU Compiler Collection)</div>
                 <div class="ecard-description">
-                    Convierte el código fuente en una secuencia de tokens, identificando palabras clave, operadores y símbolos.
+                    <ul>
+                        <li><b>Lenguajes compatibles: </b>C, C++, Objective-C, Fortran, Ada, Go, y otros.</li>
+                        <li><b>Características: </b>GCC es uno de los compiladores de código abierto más conocidos y usados. Se encuentra en sistemas
+                        operativos tipo Unix, especialmente Linux, y es conocido por su robustez y capacidad de optimización de código.</li>
+                        <li><b>Usos: </b>Desarrollos de software de bajo nivel, sistemas operativos, y aplicaciones de alto rendimiento.</li>
+                    </ul>
                 </div>
             </div>
         
             <div class="ecard">
-                <div class="ecard-title">2. Análisis Sintáctico</div>
+                <img src="LLVM.png" alt="LLVM" class="elogo">
+                <div class="ecard-title">2. Clang/LLVM</div>
                 <div class="ecard-description">
-                    Verifica la estructura gramatical de los tokens, generando un árbol de sintaxis si el código es correcto.
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>C, C++, Objective-C, Objective-C++.</li>
+                        <li> <b>Características: </b> Clang es parte del proyecto LLVM y es una alternativa moderna a GCC. Es conocido por sus diagnósticos
+                        detallados, velocidad, y soporte de código modular. También ofrece optimización de código avanzada.
+                        </li>
+                        <li> <b>Usos: </b> Muy utilizado en el desarrollo de sistemas operativos (especialmente macOS y iOS) y aplicaciones de alto
+                        rendimiento en entornos de desarrollo modernos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ecard">
+                <img src="MSVC.png" alt="MSVC" class="elogo">
+                <div class="ecard-title">3. MSVC (Microsoft Visual C++)</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>C y C++.</li>
+                        <li> <b>Características: </b>Es el compilador de Microsoft para sus entornos de desarrollo como Visual Studio. Está altamente optimizado para el
+                        desarrollo de aplicaciones en Windows y proporciona muchas características avanzadas para C++.
+                        </li>
+                        <li> <b>Usos:</b> Desarrollos en Windows, especialmente para aplicaciones comerciales, videojuegos y desarrollo de software empresarial.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ecard">
+                <img src="jdk.png" alt="jdk" class="elogo">
+                <div class="ecard-title">4. Java Development Kit (JDK)</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>Java.</li>
+                        <li> <b>Características: </b>El compilador javac incluido en el JDK convierte el código Java a bytecode que se ejecuta en la Máquina Virtual de Java
+                        (JVM). Es ampliamente utilizado en entornos multiplataforma y en el desarrollo de aplicaciones empresariales.
+                        </li>
+                        <li> <b>Usos: </b>Aplicaciones empresariales, desarrollo Android, aplicaciones web y de escritorio.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="cython.png" alt="cython" class="elogo">
+                <div class="ecard-title">5. PyInstaller y Cython (para Python)</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>CPython.</li>
+                        <li> <b>Características: </b> Aunque Python es un lenguaje interpretado, herramientas como Cython y PyInstaller permiten compilar código Python en
+                        binarios ejecutables. Cython, además, convierte código Python en C para optimización de rendimiento.
+                        </li>
+                        <li> <b>Usos: </b> Creación de aplicaciones independientes, optimización de rendimiento para cálculos pesados.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="GO.png" alt="GO" class="elogo">
+                <div class="ecard-title">6. Go Compiler</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>Go.</li>
+                        <li> <b>Características: </b>El compilador de Go es conocido por su rapidez y facilidad para compilar aplicaciones de alto rendimiento y de
+                        concurrencia.
+                        </li>
+                        <li> <b>Usos: </b> Desarrollo de aplicaciones de red, servidores, y sistemas distribuidos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="Rust.png" alt="Rust" class="elogo">
+                <div class="ecard-title">7. Rust Compiler (rustc)</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>Rust.</li>
+                        <li> <b>Características: </b>Rust es conocido por su seguridad en memoria y su rendimiento, similar al de C++, pero con un enfoque en la prevención
+                        de errores de puntero y condiciones de carrera.
+                        </li>
+                        <li> <b>Usos: </b>Sistemas de software de bajo nivel, desarrollo web, y sistemas de alto rendimiento.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="Swift.png" alt="Swift" class="elogo">
+                <div class="ecard-title">8. Swift Compiler</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>Swift.</li>
+                        <li> <b>Características: </b>Swift es el lenguaje de Apple para desarrollo en macOS e iOS. Su compilador ofrece optimización avanzada y es compatible
+                        con LLVM.
+                        </li>
+                        <li> <b>Usos: </b>Desarrollo de aplicaciones para iOS y macOS, y también para desarrollo de servicios web y aplicaciones multiplataforma
+                        con SwiftUI.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="Kotlin.png" alt="Kotlin" class="elogo">
+                <div class="ecard-title">9. Kotlin Compiler</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>Kotlin.</li>
+                        <li> <b>Características: </b>Kotlin se ha convertido en un lenguaje oficial para Android. El compilador de Kotlin traduce código a bytecode para la
+                        JVM o puede compilarse en JavaScript y código nativo.
+                        </li>
+                        <li> <b>Usos: </b>Desarrollo de aplicaciones móviles en Android y aplicaciones web.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ecard">
+                <img src="intel c.png" alt="ICC" class="elogo">
+                <div class="ecard-title">10. Intel C++ Compiler (ICC)</div>
+                <div class="ecard-description">
+                    <ul>
+                        <li> <b>Lenguajes compatibles: </b>C y C++.</li>
+                        <li> <b>Características: </b>Ofrece optimización avanzada para aplicaciones de alto rendimiento en arquitecturas Intel. Es ampliamente utilizado en
+                        sistemas de computación de alto rendimiento (HPC).
+                        </li>
+                        <li> <b>Usos: </b> Computación científica, análisis de datos, y simulaciones avanzadas en procesadores Intel.</li>
+                    </ul>
                 </div>
             </div>
         
-            <div class="ecard">
-                <div class="ecard-title">3. Análisis Semántico</div>
-                <div class="ecard-description">
-                    Comprueba el significado de las estructuras sintácticas, validando tipos de datos y referencias.
-                </div>
-            </div>
-        
-            <div class="ecard">
-                <div class="ecard-title">4. Optimización</div>
-                <div class="ecard-description">
-                    Mejora el código intermedio para reducir el tiempo de ejecución y el uso de recursos sin cambiar su
-                    funcionalidad.
-                </div>
-            </div>
-        
-            <div class="ecard">
-                <div class="ecard-title">5. Generación de Código</div>
-                <div class="ecard-description">
-                    Convierte el código optimizado en instrucciones de lenguaje de máquina para la arquitectura de destino.
-                </div>
-            </div>
-        
-            <div class="ecard">
-                <div class="ecard-title">6. Optimización de Código</div>
-                <div class="ecard-description">
-                    Realiza ajustes finales al código de máquina para mejorar la eficiencia y el rendimiento. Se traduce a un
-                    lenguaje de bajo nivel o lenguaje máquina, específico para la arquitectura de la computadora en la que se
-                    ejecutará.
-                </div>
-            </div>
-            <div class="ecard">
-                <div class="ecard-title">7. Linking</div>
-                <div class="ecard-description">
-                    Combina el código objeto con otros módulos necesarios (como bibliotecas externas) y resuelve las referencias
-                    entre ellos
-                    para producir el ejecutable final.
-                </div>
-            </div>
+            
         </div>
         
     </div>
