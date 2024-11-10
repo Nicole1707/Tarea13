@@ -1,0 +1,158 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    overflow-x: hidden;
+}
+
+/* Botón para mostrar/ocultar la barra lateral */
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icono en el título */
+.sidebar h2 i {
+    font-size: 24px;
+    color: #f4f4f4;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Color gris oscuro para la página activa */
+.sidebar a.active {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* Efecto de hover en los enlaces */
+.sidebar a:hover {
+    background-color: #666;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    width: calc(100% - 250px);
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estado oculto de la barra lateral */
+.sidebar-hidden {
+    transform: translateX(-250px);
+}
+
+.content-expanded {
+    margin-left: 0;
+    width: 100%;
+}
+/* Lista de referencias */
+.references-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.references-list li {
+    margin-bottom: 10px;
+}
+
+.references-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.references-list a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+/* Logo de UNIBE */
+.unibe-logo {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    margin-top: 40px;
+}
+
+/* Sección de presentación del grupo */
+.group-presentation {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.group-presentation h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.member-info p,
+.university-info p {
+    margin: 5px 0;
+}
+
+/* Nombres y matrículas de los miembros */
+.member-info {
+    margin-top: 15px;
+}
+
+/* Información de la universidad y asignatura */
+.university-info {
+    margin-top: 20px;
+    font-style: italic;
+}

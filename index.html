@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        
+        <a href="index.html" class="active">Inicio</a>
+        <a href="page1.html">Definición de Compiladores</a>
+        <a href="page2.html">Estructura de un compilador</a>
+        <a href="page3.html">Generación de código intermedio y final</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html">Referencias</a>
+    </div>
+
+    <div class="content" id="content">
+
+        <!-- Sección de presentación del grupo -->
+        <section class="group-presentation">
+            <!-- Logo de UNIBE -->
+            <img src="Logo_Unibe.svg.png" alt="Logo de UNIBE" class="unibe-logo">
+
+            <!-- Título de la actividad -->
+            <h2>Actividad 13: Portal Web</h2>
+
+            <!-- Nombres y matrículas de los miembros del grupo -->
+            <div class="member-info">
+                <p>Nayeli González | 24-1081</p>
+                <br>
+                <p>Erick Betances | 24-1143</p>
+                <br>
+                <p>Nicole Pérez | 24-1177</p>
+                <br>
+                <p>Delvisson Ogando | 24-1267</p>
+                <br>
+            </div>
+
+            <!-- Información de la universidad y asignatura -->
+            <div class="university-info">
+                <p>Facultad de Ingeniería en Tecnologías Computacionales,</p>
+                <p>Universidad Iberoamericana (UNIBE)</p>
+                <br>
+                <p>TI3310-03-2025-1-TEORÍA DE AUTÓMATAS Y COMPILADORES</p>
+                <br>
+                <p>Prof. Rina Familia</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

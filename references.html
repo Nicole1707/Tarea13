@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="page1.html">Definición de Compiladores</a>
+        <a href="page2.html">Estructura de un compilador</a>
+        <a href="page3.html">Generación de código intermedio y final</a>
+        <a href="page4.html">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html" class="active">Referencias</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content" id="content">
+        <div class="header">
+            <h1>Referencias</h1>
+        </div>
+        
+        <!-- Lista de referencias -->
+        <ul class="references-list">
+            <li><a href="https://es.wikipedia.org/wiki/Compilador" target="_blank">Wikipedia - Compilador</a></li>
+            <li><a href="https://www.geeksforgeeks.org/compiler-design/" target="_blank">GeeksforGeeks - Compiler Design</a></li>
+            <li><a href="https://www.tutorialspoint.com/compiler_design/index.htm" target="_blank">TutorialsPoint - Compiler Design</a></li>
+            <li><a href="https://cs.lmu.edu/~ray/notes/compilers/" target="_blank">Introduction to Compilers - Loyola Marymount University</a></li>
+            <li><a href="https://www.coursera.org/learn/compilers" target="_blank">Coursera - Compilers (Stanford University)</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
