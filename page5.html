@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fases del proceso de compilación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Barra lateral de navegación -->
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="page1.html">Definición de Compiladores</a>
+        <a href="page2.html">Estructura de un compilador</a>
+        <a href="page3.html">Generación de código intermedio y final</a>
+        <a href="page4.html" class="active">Fases del proceso de compilación</a>
+        <a href="page5.html">Compiladores empleados en la actualidad</a>
+        <a href="references.html">Referencias</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content" id="content">
+        <div class="eheader">
+            <h1>Principales Compiladores utilizdos en la actualidad</h1>
+        </div>
+        <div class="econtainer">
+            <div class="ecard">
+                <div class="ecard-title">1. GCC (GNU Compiler Collection)</div>
+                <div class="ecard-description">
+                    Convierte el código fuente en una secuencia de tokens, identificando palabras clave, operadores y símbolos.
+                </div>
+            </div>
+        
+            <div class="ecard">
+                <div class="ecard-title">2. Análisis Sintáctico</div>
+                <div class="ecard-description">
+                    Verifica la estructura gramatical de los tokens, generando un árbol de sintaxis si el código es correcto.
+                </div>
+            </div>
+        
+            <div class="ecard">
+                <div class="ecard-title">3. Análisis Semántico</div>
+                <div class="ecard-description">
+                    Comprueba el significado de las estructuras sintácticas, validando tipos de datos y referencias.
+                </div>
+            </div>
+        
+            <div class="ecard">
+                <div class="ecard-title">4. Optimización</div>
+                <div class="ecard-description">
+                    Mejora el código intermedio para reducir el tiempo de ejecución y el uso de recursos sin cambiar su
+                    funcionalidad.
+                </div>
+            </div>
+        
+            <div class="ecard">
+                <div class="ecard-title">5. Generación de Código</div>
+                <div class="ecard-description">
+                    Convierte el código optimizado en instrucciones de lenguaje de máquina para la arquitectura de destino.
+                </div>
+            </div>
+        
+            <div class="ecard">
+                <div class="ecard-title">6. Optimización de Código</div>
+                <div class="ecard-description">
+                    Realiza ajustes finales al código de máquina para mejorar la eficiencia y el rendimiento. Se traduce a un
+                    lenguaje de bajo nivel o lenguaje máquina, específico para la arquitectura de la computadora en la que se
+                    ejecutará.
+                </div>
+            </div>
+            <div class="ecard">
+                <div class="ecard-title">7. Linking</div>
+                <div class="ecard-description">
+                    Combina el código objeto con otros módulos necesarios (como bibliotecas externas) y resuelve las referencias
+                    entre ellos
+                    para producir el ejecutable final.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
